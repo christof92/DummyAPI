@@ -21,12 +21,18 @@
    1. [Баг-репорт №1](#Баг-репорт-№1)
    2. [Баг-репорт №2](#Баг-репорт-№2)
    3. [Баг-репорт №3](#Баг-репорт-№3)
-5. [Коллекции и окружение Postman](#Коллекции-и-окружение-Postman)    
+5. [Коллекции и окружение Postman](#Коллекции-и-окружение-Postman)
+   1. [Коллекция User](#Коллекция-User)
+   2. [Коллекция Post](#Коллекция-Post)
+   3. [Коллекция Comment](#Коллекция-Comment)
+   4. [Коллекция Tag](#Коллекция-Tag)
+   5. [Окружение](#Окружение)    
 
 ## Описание проекта
 
 https://dummyapi.io/ 
 Данный сайт представляет собой сервис для тестирования API. Для выполнения запросов необходим app-id, который можно получить автоматически после регистрации на сайте. Были протестированы объекты: **User** (Update и Delete User), **Post** (Get List и Create Post), **Comment** (Create и Delete Comment), **Tag** (Get List).
+С полной документацией можно ознакомиться [здесь.](https://dummyapi.io/docs)
 
 ### USER
 ___
@@ -215,6 +221,7 @@ ___
 
 ## Майнд-карта
 Данная МК представляет собой набор тестов для тестирования объектов сервиса DummyAPI. Подробная проверка расписана для **Update** и **Delete** объекта **User**.
+Зеленым цветом отмечены позитивные проверки, красным цветм негативные проверки.
 ![Alt-текст](https://i.imgur.com/nG4q4Ch.png "МК")
 
 Полную майнд-карту для просмотра объектов **Post**, **Comment**, **Tag** можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/DummyAPI_Map.png)
@@ -236,10 +243,25 @@ ___
 
 
 ## Коллекции и окружение Postman
-Для просмотра всех запросов в Postman можно скачать коллекиции и окружение (окружение обязательно для корректной работы запросов).
+Для просмотра всех запросов в Postman необходимо скачать и импортировать коллекиции и окружение (окружение обязательно для корректной работы запросов).
 
-#### 
+#### Коллекция User
+Для объекта [User](https://dummyapi.io/docs/user) были протестированы запросы Update User и Delete User. 
+Коллекцию для объекта User можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/User.postman_collection.json)
 
+#### Коллекция Post
+Для объекта [Post](https://dummyapi.io/docs/post) были протестированы запросы Get List и Create Post.
+Коллекцию для объекта Post можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/Post.postman_collection.json)
 
+#### Коллекция Comment
+Для объекта [Comment](https://dummyapi.io/docs/comment) были протестированы запросы Create Comment и Delete Comment.
+Коллекцию для объекта Comment можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/Comment.postman_collection.json)
 
+#### Коллекция Tag
+Для объекта [Tag](https://dummyapi.io/docs/tag) был протестирован запрос Get List.
+Коллекцию для объекта Tag можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/Tag.postman_collection.json)
+
+#### Окружение
+В окружении представлен базовый URL https://dummyapi.io/data/v1/ - переменная host. Также есть API ключ, который передается через Headers, ему соответствует переменная app-id.
+Окружение можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/DummyAPI.postman_environment.json)
 
