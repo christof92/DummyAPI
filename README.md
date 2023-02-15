@@ -247,19 +247,19 @@ ___
 
 #### Коллекция User
 Для объекта [User](https://dummyapi.io/docs/user) были протестированы запросы Update User и Delete User. 
-Коллекцию для объекта User можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/User.postman_collection.json)
+Коллекцию User можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/User.postman_collection.json)
 
 #### Коллекция Post
 Для объекта [Post](https://dummyapi.io/docs/post) были протестированы запросы Get List и Create Post.
-Коллекцию для объекта Post можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/Post.postman_collection.json)
+Коллекцию Post можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/Post.postman_collection.json)
 
 #### Коллекция Comment
 Для объекта [Comment](https://dummyapi.io/docs/comment) были протестированы запросы Create Comment и Delete Comment.
-Коллекцию для объекта Comment можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/Comment.postman_collection.json)
+Коллекцию Comment можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/Comment.postman_collection.json)
 
 #### Коллекция Tag
 Для объекта [Tag](https://dummyapi.io/docs/tag) был протестирован запрос Get List.
-Коллекцию для объекта Tag можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/Tag.postman_collection.json)
+Коллекцию Tag можно скачать [здесь.](https://github.com/christof92/DummyAPI/blob/main/Tag.postman_collection.json)
 
 #### Окружение
 В окружении представлен базовый URL https://dummyapi.io/data/v1/ - переменная host. Также есть API ключ, который передается через Headers, ему соответствует переменная app-id.
