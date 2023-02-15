@@ -1,0 +1,512 @@
+{
+	"info": {
+		"_postman_id": "81a6db02-9140-443f-a1e7-7d87c6355046",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23263318"
+	},
+	"item": [
+		{
+			"name": "Update User",
+			"item": [
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Helen\",\r\n    \"lastName\": \"Ivanova\",\r\n    \"title\": \"ms\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/63eb860cd856ab312a1bc136",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"63eb860cd856ab312a1bc136"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User (POST)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Helen\",\r\n    \"lastName\": \"Ivanova\",\r\n    \"title\": \"miss\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/60d0fe4f5311236168a109d8",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"60d0fe4f5311236168a109d8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User (email)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"douhajeigerau-7496@yopmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/63eb7a9b8c58241f6f4f1f09",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"63eb7a9b8c58241f6f4f1f09"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User (all fields=true values)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"dr\",\r\n    \"firstName\": \"Adam\",\r\n    \"lastName\": \"San\",\r\n    \"gender\": \"male\",\r\n    \"dateOfBirth\": \"01/25/1990\",\r\n    \"phone\": \"31526897512\",\r\n    \"picture\": \"https://randomuser.me/api/portraits/med/men/13.jpg\",\r\n    \"location\": {\r\n        \"street\": \"2nd Avenue\",\r\n        \"city\": \"New\",\r\n        \"state\": \"Fl\",\r\n        \"country\": \"USA\",\r\n        \"timezone\": \"+7:00\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/63eb8997c838c23e12922160",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"63eb8997c838c23e12922160"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User (all fields=false values)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"DOC\",\r\n    \"firstName\": \"A\",\r\n    \"lastName\": \"Asdfghjklaasdfghjklaasdfghjklaasdfghjklaasdfghjklaw\",\r\n    \"gender\": 10,\r\n    \"picture\": \"httpsrandomuser.me_api\",\r\n    \"dateOfBirth\": \"02-14-2023\",\r\n    \"phone\": 4543,\r\n    \"location\": {\r\n        \"street\": \"Kldf\",\r\n        \"city\": \"S\",\r\n        \"state\": \"\",\r\n        \"country\": 12,\r\n        \"timezone\": \"орл\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/63eb8997c838c23e12922160",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"63eb8997c838c23e12922160"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User (BDate=12/31/1899)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateOfBirth\": \"12/31/1899\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/63eb8997c838c23e12922160",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"63eb8997c838c23e12922160"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User (BDate=02/14/2023)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateOfBirth\": \"02/14/2023\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/63eb8997c838c23e12922160",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"63eb8997c838c23e12922160"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User (BDate=12/31/2025)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateOfBirth\": \"12/31/2025\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/63eb8997c838c23e12922160",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"63eb8997c838c23e12922160"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User (BDate=31/12/1990)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateOfBirth\": \"31/12/1990\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/63eb8997c838c23e12922160",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"63eb8997c838c23e12922160"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User (BDate=date)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateOfBirth\": \"date\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/63eb8997c838c23e12922160",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"63eb8997c838c23e12922160"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User (BDate=дата)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateOfBirth\": \"дата\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/63eb8997c838c23e12922160",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"63eb8997c838c23e12922160"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update User (BDate=number)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateOfBirth\": 12\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/63eb8997c838c23e12922160",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"63eb8997c838c23e12922160"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete User",
+			"item": [
+				{
+					"name": "Create User (for delete)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Ivan\",\r\n    \"lastName\": \"Petrov\",\r\n    \"email\": \"gabezajatra-5346710@yopmail.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/user/create",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/63eb7af28c582438014f1f46",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"63eb7af28c582438014f1f46"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User (id deleted)",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://dummyapi.io/data/v1/user/63eb7af28c582438014f1f46",
+							"protocol": "https",
+							"host": [
+								"dummyapi",
+								"io"
+							],
+							"path": [
+								"data",
+								"v1",
+								"user",
+								"63eb7af28c582438014f1f46"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/user",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/user/63eb8997c838c23e12922160",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user",
+						"63eb8997c838c23e12922160"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User (for update)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"miss\",\r\n    \"firstName\": \"Adams\",\r\n    \"lastName\": \"Sanf\",\r\n    \"gender\": \"other\",\r\n    \"dateOfBirth\": \"07/23/1991\",\r\n    \"phone\": \"31526897512g\",\r\n    \"email\": \"bapacabrubri-35710@yopmail.com\",\r\n    \"picture\": \"https://rafndomuser.me/api/portraits/med/men/13.jpg\",\r\n    \"location\": {\r\n        \"street\": \"2nd Avenfue\",\r\n        \"city\": \"Newf\",\r\n        \"state\": \"fFl\",\r\n        \"country\": \"UfSA\",\r\n        \"timezone\": \"+7:00b\"\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}/user/create",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{app-id}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "app-id",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
