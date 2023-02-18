@@ -246,16 +246,16 @@ data: Array(string)
 Ниже приведены несколько тест-кейсов для каждого из объектов. Тест-кейсы оформлены с помощью инструмента TestRail.
 
 #### Тест-кейс C1
-![Alt-текст](https://i.imgur.com/r04wBeb.jpeg "C1")
+![Alt-текст](https://i.imgur.com/HwoCPYR.jpeg "C1")
 
 #### Тест-кейс C2
-![Alt-текст](https://i.imgur.com/bhT8qYL.jpeg "C2")
+![Alt-текст](https://i.imgur.com/OeElkFo.jpeg "C2")
 
 #### Тест-кейс C3
-![Alt-текст](https://i.imgur.com/Q1NXpnU.jpeg "C3")
+![Alt-текст](https://i.imgur.com/o4QkrL2.jpeg "C3")
 
 #### Тест-кейс C4
-![Alt-текст](https://i.imgur.com/q4aZ9bn.jpeg "C4")
+![Alt-текст](https://i.imgur.com/SS1AE4M.jpeg "C4")
 
 ## Баг-репорты
 В процессе тестирования объектов были обнаружены баги. На некоторые из них оформлены баг-репорты с помощью инструмента Redmine.
